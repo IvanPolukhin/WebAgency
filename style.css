@@ -1,0 +1,475 @@
+body {
+    margin: 0;
+    font-family: 'Arimo', sans-serif;
+    background-color: var(--color1);
+    /* Добавлено задание цвета фона */
+}
+
+:root {
+    --color1: #fff;
+    --color2: #2d2f52;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    margin: 0;
+    /* Добавлено обнуление внешних отступов и внутренних отступов по умолчанию */
+    padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    font-family: 'Exo 2', sans-serif;
+}
+
+p {
+    margin: 0;
+}
+
+/* Header */
+
+.header {
+    background: url(img/Header/headerbg.jpg) center no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    /* Добавлено для центрирования содержимого вертикально и горизонтально */
+    align-items: center;
+    justify-content: center;
+}
+
+.header__title {
+    font-size: 48px;
+    font-family: 'Exo 2', sans-serif;
+    color: #fff;
+    /* Добавлен цвет текста */
+}
+
+.header__text {
+    font-size: 24px;
+    line-height: 1.5;
+    color: #fff;
+    /* Добавлен цвет текста */
+}
+
+.header__box {
+    border: 2px solid white;
+    width: 220px;
+    height: 160px;
+    min-width: 33.33333%;
+    display: flex;
+    flex-direction: column;
+    /* Добавлено, чтобы содержимое выровнялось по центру блока */
+    align-items: center;
+    /* Добавлено, чтобы содержимое выровнялось по центру блока */
+    justify-content: center;
+    /* Добавлено, чтобы содержимое выровнялось по центру блока */
+}
+
+.header__num {
+    font-size: 48px;
+    font-family: 'Exo 2', sans-serif;
+    color: #fff;
+    /* Добавлен цвет текста */
+}
+
+.header__subnum {
+    font-size: 18px;
+    color: #fff;
+    /* Добавлен цвет текста */
+}
+
+/* Nav */
+
+.nav {
+    border-bottom: 2px solid #adadad;
+    background-color: #fff;
+    /* Добавлен цвет фона */
+    top: 0;
+    z-index: 1000;
+}
+
+.nav__inner {
+    display: flex;
+    justify-content: flex-end;
+    /* Выравнивание элементов меню справа */
+    background-color: #fff;
+    /* Добавлен цвет фона */
+    padding: 10px 0;
+}
+
+.nav__item {
+    font-size: 30px;
+    padding: 35px 20px;
+    /* Увеличены внутренние отступы */
+    margin-right: 40px;
+    color: #000;
+    text-decoration: none;
+    font-family: 'Exo 2', sans-serif;
+    transition: .2s linear;
+}
+
+.nav__item:last-child {
+    margin-right: 0;
+}
+
+.nav__item:hover {
+    color: #f6ae48;
+}
+
+/* Studio */
+
+.studio {
+    padding: 170px 0;
+    background: url(img/Options/WE.jpg) center no-repeat;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.studio__studio {
+    font-size: 48px;
+    font-family: 'Exo 2', sans-serif;
+    color: #000;
+    /* Добавлен цвет текста */
+}
+
+.studio__text {
+    font-size: 24px;
+    color: #000;
+    /* Добавлен цвет текста */
+}
+
+/* Options */
+
+.options {
+    margin-bottom: 240px;
+}
+
+.options__inner {
+    display: flex;
+    justify-content: center;
+}
+
+.options__item {
+    padding: 10px;
+    transition: all .2s linear;
+    text-align: start;
+    /* Добавлено для выравнивания текста по центру */
+}
+
+.options__title {
+    font-weight: bold;
+    color: #000;
+    font-size: 20.45px;
+    font-family: 'Exo 2', sans-serif;
+}
+
+.options__text {
+    color: #000;
+}
+
+.options__num {
+    border: 2px solid #fff;
+    padding: 5px 10px;
+    font-size: 24px;
+}
+
+.options__arrow {
+    padding-right: 40px;
+}
+
+.options__price {
+    justify-content: space-between;
+    opacity: 0;
+    display: flex;
+    /* Добавлено, чтобы элементы выровнялись по центру блока */
+    align-items: center;
+    /* Добавлено, чтобы элементы выровнялись по центру блока */
+}
+
+.options__icon {
+    width: 28px;
+    height: 45px;
+    margin-bottom: 20px;
+}
+
+.options__item:hover {
+    background-color: #f6ae48;
+}
+
+.options__item:hover .options__icon {
+    opacity: .8;
+}
+
+.options__item:hover .options__title {
+    color: #fff;
+}
+
+.options__item:hover .options__text {
+    color: #fff;
+}
+
+.options__item:hover .options__price {
+    color: #fff;
+    opacity: 1;
+}
+
+/* Credo */
+
+.credo {
+    background: url(img/Credo/bg2.jpg) center no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 550px;
+    margin-bottom: 200px !important;
+    position: relative;
+    /* Добавлено для позиционирования элементов внутри .credo */
+}
+
+.credo__title {
+    font-size: 50px;
+    font-family: 'Exo 2', sans-serif;
+    color: #fff;
+    /* Добавлен цвет текста */
+}
+
+.credo__subtitle {
+    font-size: 24px;
+    color: #fff;
+    /* Добавлен цвет текста */
+}
+
+.credo__photo {
+    position: absolute;
+    top: 90%;
+    left: 0;
+    z-index: 1;
+}
+
+.credo__text {
+    font-size: 50px;
+    font-family: 'Exo 2', sans-serif;
+    position: absolute;
+    top: 120%;
+    left: 12%;
+    color: white;
+    z-index: 2;
+}
+
+/* Prices */
+
+.prices {
+    margin-bottom: 200px;
+}
+
+.prices__img {
+    position: absolute;
+    z-index: 5;
+    opacity: 1.2;
+    margin-bottom: 200px;
+}
+
+.prices__content {
+    position: absolute;
+    z-index: 6;
+    top: 80px;
+    left: 10%;
+}
+
+.prices__title {
+    font-size: 50px;
+    font-family: 'Exo 2', sans-serif;
+    line-height: 0.9;
+    color: #fff;
+    /* Добавлен цвет текста */
+}
+
+.prices__num {
+    font-size: 24px;
+    color: #fff;
+    /* Добавлен цвет текста */
+}
+
+.prices__line {
+    width: 265px;
+    height: 2px;
+    background: #fff;
+    margin: 15px 0 40px 0;
+    opacity: .5;
+    transition: .2s;
+}
+
+.prices__line--second {
+    width: 265px;
+    height: 2px;
+    background: #fff;
+    margin: 60px 0 40px 0;
+    opacity: .5;
+    transition: .2s;
+}
+
+.prices__box {
+    transition: all .2s linear;
+}
+
+.prices__box:hover .prices__line {
+    opacity: 1;
+}
+
+.prices__box:hover .prices__line--second {
+    opacity: 1;
+}
+
+.prices__arrow--1 {
+    color: #fff;
+    transition: .2s;
+}
+
+.prices__arrow--2 {
+    color: #fff;
+    transition: .2s;
+}
+
+.prices__arrow--3 {
+    transition: .2s;
+    color: #fff;
+}
+
+.prices__box:hover .prices__arrow--1 {
+    color: blue;
+}
+
+.prices__box:hover .prices__arrow--2 {
+    color: yellow;
+}
+
+.prices__box:hover .prices__arrow--3 {
+    color: green;
+}
+
+.prices__num--1 {
+    border: 2px solid blue;
+    padding: 5px 20px;
+    font-size: 24px;
+    color: #fff;
+    /* Добавлен цвет текста */
+}
+
+.prices__num--2 {
+    border: 2px solid yellow;
+    padding: 5px 20px;
+    font-size: 24px;
+    color: #fff;
+    /* Добавлен цвет текста */
+}
+
+.prices__num--3 {
+    border: 2px solid green;
+    padding: 5px 20px;
+    font-size: 24px;
+    color: #fff;
+    /* Добавлен цвет текста */
+}
+
+.prices__arrow {
+    color: #fff;
+}
+
+.prices__item {
+    justify-content: space-between;
+}
+
+/* First */
+.first {
+    background-color: #fff;
+    /* Добавлен цвет фона */
+    height: 300px;
+    /* Добавлена высота */
+    margin-bottom: 200px;
+    /* Добавлен отступ снизу */
+    margin-top: 450px;
+}
+
+.first__bgtext {
+    font-size: 80px;
+    font-family: 'Exo 2', sans-serif;
+    color: #dedede;
+}
+
+.first__title {
+    font-size: 34px;
+    line-height: 2;
+    color: black;
+    font-weight: 800;
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    font-family: 'Exo 2', sans-serif;
+}
+
+.first__text {
+    font-size: 24px;
+    line-height: 2;
+}
+
+.first__img {
+    margin-left: 250px;
+}
+
+.first__img:first-child {
+    margin-bottom: 20px;
+}
+
+/* projects */
+
+.projects {
+    margin-top: 250px;
+    overflow-x: hidden;
+    /* Добавлено свойство для скрытия полосы прокрутки по горизонтали */
+}
+
+.project__bg {
+    width: 100%;
+    background-color: #303263;
+}
+
+.project__text1 {
+    font-size: 96px;
+    font-weight: 800;
+    color: #8a8ba1;
+}
+
+.project__text2 {
+    font-size: 34px;
+    line-height: 2;
+    font-weight: 800;
+    color: white;
+    position: absolute;
+    top: 28%;
+    left: 35%;
+}
+
+.project__img {
+    width: 100%;
+    height: 100%;
+}
+
+.btn-itd {
+    font-weight: 800 !important;
+    font-size: 20px !important;
+    background-color: #6a6b8e !important;
+    color: white !important;
+    padding: 10px 20px !important;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
