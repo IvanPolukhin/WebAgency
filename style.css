@@ -433,6 +433,7 @@ p {
 /* projects */
 
 .projects {
+    margin-bottom: 200px;
     margin-top: 250px;
     overflow-x: hidden;
     /* Добавлено свойство для скрытия полосы прокрутки по горизонтали */
@@ -472,4 +473,215 @@ p {
     padding: 10px 20px !important;
     margin-top: 25px;
     margin-bottom: 25px;
+}
+
+/* Adaptate */
+
+.adaptate {
+    margin-bottom: 200px;
+}
+
+.adaptate__text1 {
+    font-size: 77px;
+    color: #dedede;
+    font-weight: bold;
+}
+
+.adaptate__text2 {
+    font-size: 36px;
+    font-family: 'Exo 2', sans-serif;
+    color: #000;
+    position: absolute;
+    top: 28%;
+    left: 6%;
+}
+
+.adaptate__text3 {
+    font-size: 24px;
+    line-height: 1.5;
+}
+
+.adaptate__img {
+    margin-left: 90px;
+}
+
+/* Trade */
+
+.trade {
+    background: url(img/Trade/bg.jpg) no-repeat center;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    margin-bottom: 200px;
+}
+
+.trade__title {
+    color: white;
+    font-family: 'Exo 2', sans-serif;
+    font-size: 48px;
+    padding: 50px;
+}
+
+.trade__text {
+    padding-left: 25px;
+    font-size: 30px;
+    color: white;
+    font-weight: 600;
+}
+
+.trade__text2 {
+    font-size: 18px;
+    line-height: 1.8;
+    color: white;
+    margin-bottom: 30px;
+}
+
+.trade__content {
+    display: flex;
+    justify-content: center;
+}
+
+.trade__img {
+    position: absolute;
+}
+
+.btn-itd-2 {
+    padding: 10px 15px !important;
+    color: white !important;
+    background-color: #f6ae48 !important;
+    font-weight: 800 !important;
+    font-size: 20px !important;
+    border-radius: 15px !important;
+    margin-bottom: 40px !important;
+}
+
+/* Becareful */
+
+.becareful {
+    margin-bottom: 200px;
+}
+
+.becareful__text1 {
+    font-size: 77px;
+    color: #dedede;
+    font-weight: bold;
+}
+
+.becareful__text2 {
+    font-size: 36px;
+    font-family: 'Exo 2', sans-serif;
+    color: #000;
+    position: absolute;
+    top: 28%;
+    left: 6%;
+}
+
+.becareful__text3 {
+    font-size: 24px;
+    line-height: 1.5;
+}
+
+.becareful__img {
+    margin-left: 90px;
+}
+
+/* E-mail */
+
+.email {
+    background: url(img/E-mail/bg.jpg) no-repeat center;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+}
+
+.email__text1 {
+    font-family: 'Exo 2', sans-serif;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.email__text2 {
+    font-size: 18px;
+}
+
+.email__input--1 {
+    width: 300px;
+    height: 50px;
+    border: 4px solid #fff;
+    background-color: transparent;
+    padding: 0 10px;
+}
+
+.email__input--1::placeholder {
+    color: #fff;
+}
+
+.email__input--1:first-child {
+    margin-right: -5px;
+}
+
+.email__input--2 {
+    width: 600px;
+    height: 50px;
+    border: 4px solid #fff;
+    background-color: transparent;
+    padding: 0 10px;
+}
+
+.email__input--2::placeholder {
+    color: #fff;
+}
+
+.email__input--3 {
+    width: 600px;
+    height: 160px;
+    border: 4px solid #fff;
+    background-color: transparent;
+    padding: 0 10px;
+    display: block;
+    vertical-align: top;
+}
+
+.email__input--3::placeholder {
+    color: #fff;
+    display: block;
+    vertical-align: top;
+}
+
+.email__input--1::placeholder,
+.email__input--2::placeholder,
+.email__input--3::placeholder {
+    color: #fff;
+}
+
+/* Стили при фокусировке на элементе input */
+.email__input--1:focus,
+.email__input--2:focus,
+.email__input--3:focus {
+    color: #fff;
+    border-color: #fff;
+    /* Устанавливаем белую обводку при фокусировке */
+    outline: none;
+    /* Убираем синий контур фокуса */
+}
+
+.email__contant {
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.email__btn {
+    font-family: 'Exo 2', sans-serif !important;
+    padding: 10px 15px !important;
+    background-color: #f6ae48 !important;
+    font-size: 14px !important;
+    border-radius: 15px !important;
+    margin-right: 40px !important;
+}
+
+/* Footer */
+
+.footer {
+    background-color: #f6ae48;
+    height: 100px;
 }
